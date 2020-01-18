@@ -21,8 +21,8 @@ public class Main {
         for (int i = 0; i < arrSplit.length; i++) {
             arr[i] = Integer.parseInt(arrSplit[i]);
         }
-        BubbleSort sort = new BubbleSort();
-        System.out.println(Arrays.toString(sort.sort3(arr)));
+        Sort sort = new SelectSort();
+        System.out.println(Arrays.toString(sort.sort(arr)));
         sc.close();
     }
 }
