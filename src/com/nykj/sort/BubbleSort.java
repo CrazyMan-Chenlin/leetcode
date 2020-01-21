@@ -9,7 +9,6 @@ public class BubbleSort implements Sort {
      * 冒泡排序:稳定排序
      * 时间复杂度 0(n²)
      * 空间复杂度O(1)
-     *
      * @param array
      * @return
      */
@@ -87,10 +86,9 @@ public class BubbleSort implements Sort {
                     isSort = true;
                     /*
                     index 代表无序区的长度
-                    比如测试用例中最后交换的位置是4,无序区长度是2
-                    而这个时候j为2，所以要让 index = 2
+                    无序区长度 -1
                      */
-                    index = j + 2;
+                    index = j + 1;
                 }
             }
             //经过一轮排序后，没有交换，可以认为已经有序，跳出循环
