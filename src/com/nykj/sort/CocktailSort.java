@@ -49,13 +49,13 @@ public class CocktailSort implements Sort {
             //在这里更换
             if (swapLoop == 0) {
                 //有序区2 长度-1
-                orderedRegion2 -= 1;
-                //索引位置要比长度少1，所以这里要+1
-                swapLoop = -orderedRegion2 + 1;
+                orderedRegion2 --;
+                //假如数组长度为10，那么中间的差值一直为 -8
+                swapLoop = - orderedRegion2 + 1 - orderedRegion1;
             } else {
                 swapLoop = 0;
                 //有序区长度+1
-                orderedRegion1 += 1;
+                orderedRegion1 ++;
             }
             //经过一轮排序后，没有交换，可以认为已经有序，跳出循环
             if (!isSort) { break; }
